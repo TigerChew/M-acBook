@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Banner</title>
+<style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .right-side {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .rounded-search {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 50px 50px 50px 50px;
+      outline: none;
+      width: 930px;
+      height: 41px;
+      background-color: #e2f4f9;
+      background-image: url("file:///D:/ASK%20(Asas%20Sains%20Komputer)/PROJECT/Source/Search%20icon.png");
+      background-size: 20px 20px;
+      background-position: 10px center;
+      background-repeat: no-repeat;
+      padding-left: 40px;
+      margin-top: 0.01rem;
+    }
+
+    .image-and-text-container {
+      display: flex;
+      align-items: center;
+    }
+
+    
+    .button-container {
+      display: flex;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 3px;
+      cursor: pointer;
+      transition: background-color 0.5s, color 0.5s;
+      background-image: url('file:///D:/ASK%20(Asas%20Sains%20Komputer)/PROJECT/Source/Expand%20more%20icon.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: 95% center;
+    }
+
+    .homepage-button {
+      background-color:#8ed8ff;
+      background-image: url('file:///D:/ASK%20(Asas%20Sains%20Komputer)/PROJECT/Source/Homepage%20icon.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: 5% center;
+    }
+
+    .feedback-button {
+      background-image: url('file:///D:/ASK%20(Asas%20Sains%20Komputer)/PROJECT/Source/Feedback%20icon.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: 5% center;
+    }
+
+    .quiz-button {
+      background-image: url('file:///D:/ASK%20(Asas%20Sains%20Komputer)/PROJECT/Source/Quiz%20icon.png');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: 5% center;
+    }
+
+    .text-container {
+      padding-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+<div style="text-align: center;">
+  <div class="container">
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="file:///D:/ASK%20(Asas%20Sains%20Komputer)/PROJECT/A.png" target="blank"><img src="D:\ASK (Asas Sains Komputer)\PROJECT\logo.png" alt="M-acBook" width="440" height="130"></a>
+    <div class="right-side">
+      <form id="search-form" action="https://www.google.com/search" target="_blank" method="GET">
+        <input type="text" name="q" class="rounded-search" placeholder="Search" autocomplete="off">
+      </form>
+      <div class="buttons">
+        &nbsp;
+          <button class="button homepage-button" onclick="changeColor(this); loadHomePage()">Home</button>
+          <button class="button" onclick="changeColor(this); loadArtPage()">Art</button>
+          <button class="button" onclick="changeColor(this); loadMusicPage()">Music</button>
+          <button class="button" onclick="changeColor(this); loadClothingPage()">Clothing</button>
+          <button class="button" onclick="changeColor(this); loadCuisinePage()">Cuisine</button>
+          <button class="button" onclick="changeColor(this); loadSportPage()">Sport</button>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <button class="button quiz-button" onclick="changeColor(this); loadQuizPage()">Quiz</button>
+          <button class="button feedback-button" onclick="changeColor(this); loadFeedbackPage()">Feedback</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+        
+    function changeColor(button) {
+        const buttons = document.querySelectorAll(".button");
+
+        buttons.forEach((btn) => {
+            btn.style.backgroundColor = '#ffffff';
+        });
+
+        button.style.backgroundColor = '#8ed8ff';
+    }
+
+    function loadHomePage() {
+      parent.frames['Homepage'].location.href = 'Homepage.html';
+    }
+
+    function loadArtPage() {
+      parent.frames['Homepage'].location.href = 'Art.html';
+    }
+
+    function loadMusicPage() {
+      parent.frames['Homepage'].location.href = 'Music.html';
+    }
+
+    function loadClothingPage() {
+      parent.frames['Homepage'].location.href = 'Clothing.html';
+    }
+
+    function loadCuisinePage() {
+      parent.frames['Homepage'].location.href = 'Cuisine.html';
+    }
+
+    function loadSportPage() {
+      parent.frames['Homepage'].location.href = 'Sport.html';
+    }
+
+    function loadQuizPage() {
+      parent.frames['Homepage'].location.href = 'https://turbowarp.org/916728250/embed?autoplay'
+    }
+
+    function loadFeedbackPage() {
+      parent.frames['Homepage'].location.href = 'Feedback.html';
+    }
+
+    const searchBox = document.querySelector(".search-box");
+        const searchForm = document.querySelector("#search-form");
+
+        searchBox.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                const query = searchBox.value;
+                window.open(`https://www.google.com/search?q=${query}`);
+                searchBox.value = "";
+            }
+        });
+</script>
+</body>
+</html>

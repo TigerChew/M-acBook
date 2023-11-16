@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>Malaysia Sports</title>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    th {
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+    }
+
+    td {
+        background-color: #ffffff7c;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ffffff;
+    }
+
+    tr:hover {
+        background-color: #f3f3f391;
+    }
+
+    .image-container {
+        display: flex;
+    }
+
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    #content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .top-section {
+      height: 100vh;
+      background: url('https://www.wallpapersifu.com/wp-content/uploads/2020/11/SM-Sports-003.jpg') center/cover no-repeat;
+    }
+
+    .content-for-top {
+      background: rgba(255, 255, 255, 0.57);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.822);
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .button {
+        background-color: #000000aa;
+        color: #ffffff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-button {
+        background-color: #b5b5b5;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 150px;
+        height: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-option {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .dropdown-option:hover {
+        background-color: #f2f2f2;
+    }
+
+    section {
+        background-color: #ffffff;
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+<div style="text-align: center;">
+    <div class="top-section">
+        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+        <div class="content-for-top">
+            <h1>Sport</h1>
+            <p>Malaysian sports saw significant progress over the years with more sporting programmes are introduced from grassroots level to elite athlete programmes while also not forgetting involvement from the community and corporate, which made sports more inclusive to all Malaysians. Among the sports programmes include National Football Development Plan (NFDP), Junior Cycling Malaysia (JCM), FitMalaysia, Hari Sukan Negara (HSN), Anugerah Sukan Negara (ASN) and others.</p>
+            <button class="button" id="scrollButton">Learn more</button>
+        </div>
+    </div>
+    <div class="bottom-section">
+    <video autoplay muted loop>
+        <source src="D:\ASK (Asas Sains Komputer)\PROJECT\Source\Background video 8 (1080p).mp4" type="video/mp4">
+    </video>
+    <div id="content">
+    <p>&nbsp;</p>
+    <h1>Sports in Malaysia</h1>
+    <p>&nbsp;</p>
+    <table>
+        <tr>
+            <th>Sport</th>
+            <th>Image</th>
+            <th>Info</th>
+        </tr>
+        <tr onclick="window.open('https://fam.org.my/', '_blank');">
+            <td>Football</td>
+            <td><img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt688ab9d87cc3ae2b/637b34528b58cf6515a51a6b/AFF_Squad_Malaysia.jpg?auto=webp&format=pjpg&width=1200&quality=60" alt="Football (Can't load image)" width="460px" height="250px"></td>
+            <td>Football is the most popular sport in Malaysia, where the first modern set of rules for the code were established in 1921, which were a major influence on the development of the modern Laws of the Game. The sport of football in the country of Malaysia is run by the Football Association of Malaysia.</td>
+        </tr>
+        <tr onclick="window.open('https://bam.org.my/', '_blank');">
+            <td>Badminton</td>
+            <td>
+                <div class="image-container">
+                    <img src="https://badmintonfamly.com/wp-content/uploads/2018/05/Lee-Chong-Wei-ny.jpg" alt="Badminton 1 (Can't load image)" width="225px" height="160px">
+                    &nbsp; &nbsp;
+                    <img src="https://assets.nst.com.my/images/articles/weig%3Balvk_1560571706.jpg" alt="Badminton 2 (Can't load image)" width="225px" height="160px">
+                </div>
+            </td>
+            <td>Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are "singles" (with one player per side) and "doubles" (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court.</td>
+        </tr>
+        <tr onclick="window.open('https://en.wikipedia.org/wiki/Sepak_takraw', '_blank');">
+            <td>Sepak takraw</td>
+            <td><img src="https://media.thestar.com.my/Prod/7D4EEBCC-3653-4C9D-9F7C-34C0B55AAB1A" alt="Sepak Takraw (Can't load image)" width="460px" height="300px"></td>
+            <td>Sepak Takraw is a team sport played with a ball made of rattan or synthetic plastic between two teams of two to four players on a court resembling a badminton court.</td>
+        </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <section>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        I want to learn more about...
+        <div class="dropdown">
+            <div class="dropdown-button">Choose</div>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-option" onclick="loadIframe(event, 'https://en.wikipedia.org/wiki/Football_in_Malaysia')">Football</a>
+                    <a href="#" class="dropdown-option" onclick="loadIframe(event, 'https://en.wikipedia.org/wiki/Malaysia_national_badminton_team')">Badminton</a>
+                    <a href="#" class="dropdown-option" onclick="loadIframe(event, 'https://en.wikipedia.org/wiki/Sepak_takraw')">Sepak Takraw</a>
+                    <a href="#" class="dropdown-option" onclick="loadIframe(event, 'https://en.wikipedia.org/wiki/Malaysian_Open_(tennis)')">Tennis</a>
+                    <a href="#" class="dropdown-option" onclick="loadIframe(event, 'https://en.wikipedia.org/wiki/Squash_(sport)')">Squash</a>
+                    <a href="#" class="dropdown-option" onclick="loadIframe(event, 'https://en.wikipedia.org/wiki/List_of_Malaysian_records_in_track_cycling')">Cycling</a>
+                </div>
+        </div>
+        <p><iframe id="iframe" src="Blank.html" width="1000px" height="420px"></iframe></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <iframe src="Bottom.html" width="100%" height="347"></iframe>
+    </section>
+<script>
+    document.getElementById("scrollButton").addEventListener("click", function() {
+        document.querySelector(".bottom-section").scrollIntoView({ behavior: "smooth" });
+    });
+
+    function loadIframe(event, url) {
+        event.preventDefault();
+        var iframe = document.getElementById("iframe");
+        iframe.src = url;
+    }
+</script>
+</body>
+</html>

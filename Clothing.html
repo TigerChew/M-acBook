@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Traditional clothes.</title>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    img{
+        transition: transform 0.3s, box-shadow 0.3s;
+        transform: scale(0.9);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 1;
+    }
+
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+
+    #content {
+        position: relative;
+        z-index: 1;
+    }
+ 
+    .top-section {
+      height: 100vh;
+      background: url('https://static.vecteezy.com/system/resources/previews/024/928/843/non_2x/variety-of-modern-garments-hanging-in-elegant-clothing-store-boutique-generated-by-ai-free-photo.jpg') center/cover no-repeat;
+    }
+
+    .content-for-top {
+      background: rgba(255, 255, 255, 0.71);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.822);
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .button {
+        background-color: #000000aa;
+        color: #ffffff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+    
+    iframe {
+      border: none;
+      width: 100%;
+      height: 347;
+    }
+</style>
+</head>
+<body>
+<div style="text-align: center;">
+    <div class="top-section">
+        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+        <div class="content-for-top">
+            <h1>Clothing</h1>
+            <p>Traditional clothes among Malaysians represent a cultural symbol of a society. In Malaysia There are three dominant cultures such as Malay, Chinese and Indians. Besides that, Malaysia represents a multicultural nation which has their own traditional clothing.</p>
+            <button class="button" id="scrollButton">Learn more</button>
+        </div>
+    </div>
+    <div class="bottom-section">
+    <video autoplay muted loop>
+        <source src="D:\ASK (Asas Sains Komputer)\PROJECT\Source\Background video 6 (1080p).mp4" type="video/mp4">
+    </video>
+    <div id="content">
+    <p>&nbsp;</p>
+    <p><h1>Clothing</h1></p>
+    <p>&nbsp;</p>
+    <div class="container">
+        <div class="left">
+            <p><a href="https://en.wikipedia.org/wiki/Chinese_clothing" target="blank">Traditional Chinese clothing</a></p>
+            <a href="https://en.wikipedia.org/wiki/Chinese_clothing" target="blank"><img src="https://img.alicdn.com/imgextra/i2/2171218952/TB2AsqIjStYBeNjSspkXXbU8VXa_!!2171218952.jpg" alt="Chinese clothing (Can't load image)" width="300" height="300"></a>
+            <p>&nbsp</p>
+            <p>Traditional Han clothing has a recorded history of more than</p>
+            <p>three millennia until the end of the Ming dynasty.</p>
+            <p>Most Chinese men wore Chinese black cotton shoes, but wealthy</p>
+            <p>higher-class people would wear tough black leather shoes</p>
+            <p>for formal occasions.</p>
+        </div>
+        <div class="right">
+            <p><a href="https://en.wikipedia.org/wiki/Clothing_in_India" target="blank">Traditional India clothing</a></p>
+            <a href="https://en.wikipedia.org/wiki/Clothing_in_India" target="blank"><img src="https://i.zgjm.org/uploads/allimg/c120706/134152GIQ230-22156.jpg" alt="India clothing (Can't load image)" width="200" height="300"></a>
+            <p>&nbsp</p>
+            <p>Clothing in India varies with the different ethnicities, geography,</p>
+            <p>climate, and cultural traditions of the people of each region of India.</p>
+            <p>Historically, clothing has evolved from simple garments like kaupina,</p>
+            <p>langota, achkan, lungi, sari, to rituals and dance performances.</p>
+            <p>In urban areas, western clothing is common and uniformly</p>
+            <p>worn by people of all social levels.</p>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</div>
+<iframe src="Bottom.html"></iframe>
+<script>
+    document.getElementById("scrollButton").addEventListener("click", function() {
+      document.querySelector(".bottom-section").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

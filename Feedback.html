@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Feedback us</title>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to top left, lightblue, lightcoral);
+        background-attachment: fixed;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60vh;
+        padding: 10px;
+    }
+
+    .top-row {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .left-textarea,
+    .right-textarea {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 20px;
+        resize: none;
+    }
+
+    .bottom-textarea {
+        width: 90%;
+        height: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 20px;
+        resize: none;
+        margin-bottom: 1px;
+    }
+
+    .custom-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+        background-color: #2980b9;
+    }
+
+    .loading-image {
+        display: none;
+    }
+
+    textarea {
+      font-family: 'Roboto', sans-serif;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<div style="text-align: center;">
+    <p>&nbsp</p>
+    <p><h1>Feedback form</h1></p>
+    <form target="_blank" action="https://formspree.io/f/mjvqlzqn" method="POST">
+    <div class="container">
+        <div class="top-row">
+            <input type="text" class="left-textarea" name="Name" placeholder="Your name" required="" autocomplete="off">
+            <input type="email" class="right-textarea" name="reply to" id="email-address" placeholder="Your Email" required="" autocomplete="off">
+        </div>
+        <textarea name="message" class="bottom-textarea" placeholder="Your description"></textarea>
+    </div>
+    <p><button class="custom-button" id="myButton" type="submit">Submit</button></p>
+    <center><img src="https://i.gifer.com/ZKZg.gif" width="25" height="25" class="loading-image" alt="loading..."></center>
+    </form>
+</div>
+<script>
+    document.getElementById('myButton').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.querySelector('.loading-image').style.display = 'block';
+
+        setTimeout(function() {
+            window.location.href = 'Thank You.html';
+        }, 3000);
+    });
+</script>
+</body>
+</html>

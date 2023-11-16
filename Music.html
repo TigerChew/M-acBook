@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Music</title>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    img{
+        transition: transform 0.3s, box-shadow 0.3s;
+        transform: scale(0.9);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        flex: 1;
+        padding: 20px;
+        margin-top: 0px;
+        margin-left: 140px;
+        
+    }
+
+    .image {
+        flex: 1; 
+        text-align: center; 
+        padding: 10px;
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    #content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .top-section {
+      height: 100vh;
+      background: url('https://saiedmusic.com/wp-content/uploads/2022/09/music-rainbow.jpg') center/cover no-repeat;
+    }
+
+    .content-for-top {
+      background: rgba(255, 255, 255, 0.799);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.822);
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .button {
+        background-color: #000000aa;
+        color: #ffffff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 347;
+    }
+</style>
+</head>
+<body>
+<div style="text-align: center;">
+    <div class="top-section">
+        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+        <div class="content-for-top">
+            <h1>Music</h1>
+            <p>The foundations of Malaysian musical styles and instruments originate from artistic portrayal of history, love, religion and beliefs. Performances such as the ‘Nobat’ (a special Royal Orchestra) or ‘Wayang Kulit’ (performance done by shadow puppets) are examples of tradition in Malaysian Music. The specially crafted instruments add interest and mystery to any performance. It comes to no surprise that an international artiste such as Yuna would incorporate Malaysia’s rich history of music and their unique sounding instruments into her modern sound.</p>
+            <button class="button" id="scrollButton">Learn more</button>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <video autoplay muted loop>
+            <source src="D:\ASK (Asas Sains Komputer)\PROJECT\Source\Background video 2 (1080p).mp4" type="video/mp4">
+        </video>
+        <div id="content">
+        <p>&nbsp;</p>
+        <div class="container">
+            <div class="text">
+                <p><h1>Music</h1></p>
+                <p>Traditional Malay music and performing arts appear to have originated in the <a href="https://en.wikipedia.org/wiki/Kelantan-Pattani_Malay" target="blank">Kelantan-Pattani</a> region.</p>
+                <p>The music is based around percussion instruments, the most important of which is the <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Traditional_indonesian_drums.jpg/1200px-Traditional_indonesian_drums.jpg" target="blank">gendang (drum)</a>.</p>
+                <p>There are at least 14 types of traditional drums.</p>
+                <p>&nbsp</p>
+                <p>&nbsp</p>
+                <p>Drums and other traditional percussion instruments are often made from natural materials such as <a href="https://static.scientificamerican.com/sciam/cache/file/CDA9C7AB-ACF1-4D7A-92D04BEC5395D606_source.jpg" target="blank">shells</a>.</p>
+                <p>Other instruments include the rebab (a bowed string instrument), the <a href="https://1.bp.blogspot.com/_IwD9YBiayMo/TCRlAkRM7XI/AAAAAAAABkc/iTJJvYKYDzw/s1600/serunai.jpg" target="blank">serunai</a> (a double-reed oboe-like instrument), the <a href="https://m.media-amazon.com/images/I/81i6Hx5FrvL.jpg" target="blank">seruling</a> (flute), and <a href="https://www.roots.gov.sg/CollectionImages/1080709.jpg" target="blank">trumpets</a>.</p>
+                <p>Music is traditionally used for storytelling, celebrating life-cycle events, and at annual events such as the harvest.</p>
+                </div>
+            <div class="image">
+                <p>Gendang (drum)</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Traditional_indonesian_drums.jpg/1200px-Traditional_indonesian_drums.jpg" alt="gendang (Can't load image)" width="200" height="210">
+                <p>&nbsp;</p>
+                <p>rebab</p>
+                <img src="https://cdn1.katadata.co.id/media/images/thumb/2021/11/29/Alat_Musik_Rebab-2021_11_29-22_11_00_4bf73971b57e5470ab6fe0b633671f50_960x640_thumb.jpg" alt="rebab (Can't load image)" width="200" height="130">
+            </div>
+        </div>
+        <p>&nbsp;</p><p>&nbsp;</p>
+    </div>
+</div>
+<iframe src="Bottom.html"></iframe>
+<script>
+    document.getElementById("scrollButton").addEventListener("click", function() {
+      document.querySelector(".bottom-section").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
